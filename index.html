@@ -3,7 +3,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta property="og:title" content="نجوم مدرستي">
 <meta property="og:description" content="لوحة شرف طالبات المدرسة المتوسطة 121">
-<meta property="og:image" content="https://USERNAME.github.io/najoom/cover.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aziza-alqarni.github.io/najoom-madrasati/">
+<meta property="og:image" content="https://aziza-alqarni.github.io/najoom-madrasati/cover.jpg?v=2">
+<meta property="og:image:secure_url" content="https://aziza-alqarni.github.io/najoom-madrasati/cover.jpg?v=2">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1100">
+<meta property="og:image:height" content="600">
+<meta property="og:image:alt" content="نجوم مدرستي">
+<meta name="twitter:image" content="https://aziza-alqarni.github.io/najoom-madrasati/cover.jpg?v=2">
 <meta name="twitter:card" content="summary_large_image">
 <title>نجوم مدرستي</title>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
@@ -263,7 +271,7 @@ r.sort((a,b)=>b[so]-a[so]);
 $("cnt").textContent="عدد النتائج: "+r.length;
 $("list").innerHTML=r.map((x,i)=>`<div class="row"><div class="n">${i+1}</div><div><div class="nm2">${x.n}</div>${bar("الواجبات",x.h)}${bar("الاختبارات",x.t)}</div></div>`).join("")||'<div class="cnt">لا توجد نتائج مطابقة</div>';}
 ["q","lv","so"].forEach(i=>$(i).addEventListener("input",render));render();
-const pc=["#b8c2cc","#f7c600","#d99058"],ph=[150,190,120];
+const pc=["#f7c600","#b8c2cc","#d99058"],ph=[190,150,120];
 $("pod").innerHTML=[1,0,2].map(i=>{const x=TP[i];return `<div class="pd" onclick="cert(${i})"><div class="lb">${["المركز الأول","المركز الثاني","المركز الثالث"][i]}</div><div class="av" style="background:${pc[i]}">${x.n[0]}</div><div class="pn">${x.n}</div><div class="pt">${x.s.toFixed(1)} نقطة</div><div class="pl" style="height:${ph[i]}px;background:${pc[i]}">${i+1}</div></div>`}).join("");
 const cv=$("cf"),cx=cv.getContext("2d");let ps=[],raf=0;
 function boom(){cv.width=innerWidth;cv.height=innerHeight;for(let i=0;i<160;i++)ps.push({x:innerWidth/2,y:innerHeight/3,vx:(Math.random()-.5)*16,vy:Math.random()*-14-2,c:`hsl(${Math.random()*360},85%,60%)`,s:5+Math.random()*6,r:Math.random()*6});if(!raf)anim()}
