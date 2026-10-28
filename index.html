@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="نجوم مدرستي">
+<meta property="og:description" content="لوحة شرف طالبات المدرسة المتوسطة 121">
+<meta property="og:image" content="https://USERNAME.github.io/najoom/cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<title>نجوم مدرستي</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f7fb;--card:#fff;--tx:#1c2b3a;--mu:#6b7c8d;--pr:#5b4bd6;--pr2:#8a63f0;--g:#22b573;--y:#f2b705;--r:#e5584f;--bd:#e3e9f1;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1621;--card:#18222f;--tx:#e8eef5;--mu:#93a3b4;--bd:#273445;color-scheme:dark}}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:'Tajawal',Tahoma,Arial,sans-serif;line-height:1.6}
+.cover{display:block;width:100%;max-height:440px;object-fit:cover}
+.hero{background:linear-gradient(180deg,#1b1650,#3a2a8f);color:#fff;padding:18px 16px 70px;text-align:center}
+.hero small{opacity:.9;display:block}.hero h1{margin:6px 0;font-size:clamp(28px,6vw,44px)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 14px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:-48px}
+.st{background:var(--card);border-radius:16px;padding:16px;box-shadow:0 4px 14px #0001;text-align:center}
+.st b{display:block;font-size:30px;color:var(--pr)}.st span{color:var(--mu);font-size:14px}
+h2{margin:32px 0 12px;font-size:22px}
+.hon{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.hc{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:14px 10px;text-align:center;position:relative}
+.av{width:56px;height:56px;border-radius:50%;margin:0 auto 8px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:24px;background:linear-gradient(135deg,var(--pr),var(--pr2))}
+.hc:nth-child(1) .av{background:linear-gradient(135deg,#f7c600,#e08a00)}.hc:nth-child(2) .av{background:linear-gradient(135deg,#b8c2cc,#7d8b99)}.hc:nth-child(3) .av{background:linear-gradient(135deg,#d99058,#a9612c)}
+.hc .rk{position:absolute;top:8px;right:10px;font-size:18px}.hc .nm{font-weight:700;font-size:14px;min-height:44px}
+.pts{color:var(--pr);font-weight:800}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.bar input,.bar select{padding:10px 12px;border:1px solid var(--bd);border-radius:12px;background:var(--card);color:var(--tx);font:inherit}
+.bar input{flex:1;min-width:180px}
+.row{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:12px 14px;margin-bottom:8px;display:grid;grid-template-columns:34px 1fr;gap:10px;align-items:center}
+.n{width:34px;height:34px;border-radius:50%;background:var(--bg);display:grid;place-items:center;font-weight:700;font-size:13px}
+.nm2{font-weight:700;margin-bottom:6px}
+.pb{display:grid;grid-template-columns:70px 1fr 52px;gap:8px;align-items:center;font-size:13px;color:var(--mu);margin-bottom:3px}
+.pb i{display:block;height:9px;border-radius:9px;background:var(--bd);overflow:hidden}.pb em{display:block;height:100%;border-radius:9px}
+.pb strong{color:var(--tx);text-align:left}
+.cnt{color:var(--mu);font-size:13px;margin-bottom:8px}
+#cf{position:fixed;inset:0;pointer-events:none;z-index:50}
+:root:root:root{--bg:#0d0b2e;--card:#1a1647;--tx:#f5efe0;--mu:#b9b3d9;--pr:#f2c14e;--pr2:#e39b1f;--bd:#3a3470;color-scheme:dark}
+body{background:radial-gradient(1.5px 1.5px at 20px 30px,#fff9,transparent),radial-gradient(1px 1px at 90px 80px,#fffc,transparent),radial-gradient(2px 2px at 60px 130px,#f2c14e99,transparent),#0d0b2e;background-size:140px 160px,170px 150px,210px 190px,auto}
+h2{color:#f2c14e}
+.st,.hc,.row,.wheel{box-shadow:0 0 18px #f2c14e22}
+.hc{background:linear-gradient(160deg,#241e5c,#1a1647)}
+.av,.pl,.btn,.nb button{color:#1b1650}
+.bar input,.bar select{color:#f5efe0}
+.pod{display:flex;justify-content:center;align-items:flex-end;gap:10px;margin:10px 0 24px}
+.pd{flex:1;max-width:200px;text-align:center;cursor:pointer}
+.pn{font-weight:700;font-size:13px;min-height:42px}.pt{color:var(--pr);font-weight:800}
+.lb{display:inline-block;background:linear-gradient(90deg,#c9a227,#f7e08a,#c9a227);color:#3a2e12;font-weight:800;font-size:13px;padding:3px 14px;margin-bottom:8px}
+.pl{border-radius:12px 12px 0 0;color:#fff;font-size:36px;font-weight:800;display:grid;place-items:center}
+.wheel{text-align:center;background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:20px}
+#wh{width:150px;height:150px;border-radius:50%;margin:0 auto 12px;background:conic-gradient(#f7c600,#e5584f,#8a63f0,#22b573,#3ba0f0,#f7c600);border:6px solid var(--card);box-shadow:0 0 0 3px var(--pr);transition:transform 3.2s cubic-bezier(.2,.8,.2,1)}
+#wn{font-size:22px;font-weight:800;min-height:34px;color:var(--pr)}
+.btn,.nb button{background:var(--pr);color:#fff;border:0;border-radius:12px;padding:10px 20px;font:inherit;cursor:pointer;margin:4px}
+#cm{display:none;position:fixed;inset:0;background:#000a;z-index:60;align-items:center;justify-content:center;padding:14px}
+.cert{background:#fffdf5;color:#3a2e12;border:6px double #c9a227;border-radius:12px;padding:26px;max-width:520px;width:100%;text-align:center}
+.cert h3{font-size:30px;color:#8a5a00;margin:8px 0}
+@media print{body *{visibility:hidden}.cert,.cert *{visibility:visible}.nb{display:none}.cert{position:fixed;inset:0}}
+footer{text-align:center;color:var(--mu);padding:30px 14px;font-size:13px}
+</style></head><body>
+<img class="cover" alt="نجوم مدرستي" src="cover.jpg"><div class="hero"><div class="pod" id="pod"></div><small>وزارة التعليم · إدارة تعليم جدة</small>
+<div>المدرسة المتوسطة 121 · الفصل الدراسي الأول 1448</div>
+<small>منسقة مدرستي: عزيزة القرني</small><small>مديرة المدرسة: فاطمة الغامدي</small><button class="btn" onclick="boom()" style="margin-top:12px;background:#fff;color:#5b4bd6;font-weight:700">🎉 احتفال</button></div><canvas id="cf"></canvas><div id="cm"></div>
+<div class="wrap">
+<div class="stats"><div class="st"><b id="s1">0</b><span>عدد الطالبات</span></div>
+<div class="st"><b id="s2">0%</b><span>متوسط إنجاز الواجبات</span></div>
+<div class="st"><b id="s3">0%</b><span>متوسط نتائج الاختبارات</span></div>
+<div class="st"><b id="s4" style="font-size:20px">-</b><span>الأكثر تفاعلاً</span></div></div>
+<h2>🌟 لوحة الشرف للأعلى تفاعلاً</h2><div class="cnt">شهادات التكريم للثلاث الأوائل فقط: اضغطي على بطاقتهن أو على المنصة</div><div class="hon" id="hon"></div>
+<h2>🎡 عجلة النجوم</h2><div class="wheel"><div id="wh"></div><div id="wn">من ستكون نجمة اليوم؟</div><button class="btn" onclick="spin()">أدِر العجلة</button></div>
+<h2>📊 مؤشر أداء المهام</h2>
+<div class="bar"><input id="q" placeholder="🔍 ابحثي عن طالبة بالاسم..."><select id="lv"><option value="">كل المستويات</option><option value="g">ممتاز (75% فأكثر)</option><option value="y">متوسط (50% - 74%)</option><option value="r">يحتاج دعم (أقل من 50%)</option></select>
+<select id="so"><option value="h">ترتيب حسب الواجبات</option><option value="t">ترتيب حسب الاختبارات</option><option value="s">ترتيب حسب التفاعل الكلي</option></select></div>
+<div class="cnt" id="cnt"></div><div id="list"></div></div>
+<footer>للعرض فقط · البيانات من منصة مدرستي</footer>
+<script>
+const D=`غيداء وائل الحاج|89.29|88.38
+لينا ياسر بن عفيف|92.59|79.79
+ليان بنت سلطان بن السويل|89.81|81.51
+جوري مشهور القثامي|85.27|82.28
+هيلين حسين عازب|85.08|82.15
+سيلين حسين بن عازب|86.59|80.27
+سجى عبدالمجيد الزبالي|82.84|81.46
+غلا وليد غلام|82.58|81.60
+اسراء احمد بركات|84.41|78.69
+تاليا حامد الحربي|92.71|69.87
+تولين ملهم بترجي|81.97|75.87
+ليلى بنت ثامر بن الظاهري|78.49|78.98
+ماريا خالد بن جوبح|84.95|72.01
+صبا بنت محمد بن عسيسي|78.48|77.20
+نور بنت علي بن الحميدي الزهراني|81.39|74.21
+دره بنت احمد بن الزايدي|82.97|70.27
+ناهد عبدالرحمن البرعي|80.33|72.35
+امل بنت عبدالله بن آل ملحان|82.84|67.23
+ليان بنت هاني بن سعد بن حمدان الشريف|85.35|63.30
+ورد عادل القثامي|80.22|66.31
+ابتهال ادم فلاتة|83.32|62.71
+روز عبدالله الشهري|82.31|62.08
+جمانه بسام باجخيف|75.74|68.59
+رنيم بنت مازن بن محمد سعيد|74.63|68.55
+تالين ماجد ثابت|76.32|66.17
+تالين صقر بن علي الرويثي العمري|84.14|58.05
+ريلام بركه الزحيمي السلمي|84.40|57.37
+رسال علاء مغربي|82.49|58.31
+فاطمه بنت محمد بن ال قريشه|79.59|61.05
+رتال ثابت تركستاني|72.94|67.63
+ميرال سعيد العمري|71.81|66.47
+لانا بنت سمير بن بتاع بن البلادي|92.54|45.33
+مارية بنت جمال بن يوسف بن سنبل|72.47|63.21
+غدي علي منباش|76.06|57.91
+الجوهرة سعيد القحطاني|75.15|58.20
+همس حمود الكناني|70.99|61.17
+روا بنت صالح بن العلياني|70.82|61.17
+زينه بنت فؤاد بن عبدالباقي|63.98|66.86
+كيان بنت مشاري بن البازى الحارثي|87.66|42.97
+نايا فراس بن عقيل|64.05|66.04
+رولان عطيةالله بن المرامحي|94.97|34.68
+لمى وائل ابورديف|89.66|40.00
+ريما بنت محمد بن الثقفي|74.62|53.08
+جنى ادهام الخلف|71.60|56.08
+تاله احمد الحضرمى|72.39|54.96
+ليان ابكر حمود|66.14|60.57
+منيره فهد اليامي|87.97|37.12
+رانسي هشام الزهيري|96.43|28.57
+سلاف أبراهيم بن اليحى|71.46|53.18
+لجين بنت حميد بن حامد بن المعبدي|76.61|47.91
+ألين بنت محمد بن الغامدي|75.00|49.34
+مايا بنت ابراهيم بن علي بن الحسني|73.28|49.36
+نور عبدالله الغامدي|74.15|47.10
+ريتال ابراهيم عسيري|75.38|45.78
+الين هيثم معروف|76.33|44.20
+سيلين يوسف هندم|77.91|42.40
+سيدرا يوسف هندم|74.13|46.14
+رغد بنت مشاري الضويفري|83.57|36.36
+ليان فيصل الصيدلاني|67.34|52.49
+بيسان ماجد المطيري|72.71|46.06
+غنى جميل البشري|68.06|50.76
+علياء حمدي بن الشاطري المطيري|63.00|55.82
+عايدة عارف ثابت|75.90|42.37
+سوزان فهد ارشد|67.45|50.62
+هويدا محمد العطاس|84.04|33.57
+سمر سليمان العسيري|86.01|30.26
+سلاف بنت امجد بن الشريف|54.33|61.78
+ريزان جمعه المولد|70.20|45.15
+ميلان محمود بلعلا|64.17|51.00
+رنيم عبدالله الزهراني|74.74|40.20
+كنزي سلطان رجب|90.18|24.14
+سارا حسين العصلاني|59.46|54.01
+داليا فيصل الغامدي|79.41|33.91
+صبا بنت صالح بن احمد بن الزهراني|77.87|34.20
+ريتال بنت محمد الغامدي|75.38|36.65
+غلا عبدالرحمن الأحمري|82.79|28.94
+رسيل مشرف الشهري|63.92|47.51
+رؤى محمد الشمراني|81.43|29.83
+جمانه بنت سلطان بن السويداء|59.63|51.52
+رفيف فيصل ابن الجفر الغامدي|58.76|51.35
+رفيف فيصل الجيزاني|76.13|33.27
+رنيم ابراهيم بن ناصر|76.88|32.25
+ايلان علي الغامدي|84.48|24.33
+غزلان ريان طيب|58.40|50.39
+رغد علاء بن الظاهري|62.42|46.29
+ديالا عاصم الغامدى|64.00|44.30
+لينا بنت عثمان بن الصعب|79.44|27.63
+جوري حسين الغامدي|58.69|46.69
+طيف عبدالرحمن الزهراني|62.89|42.52
+اشراق موسى بن المولد|81.82|23.48
+الين عصام صالح|58.14|46.82
+طيف طاهر سميع الدين|63.94|40.86
+ياسمين بنت عبدالرحمن بن المعاوي|59.83|44.74
+ماريا عبدالرشيد بن أيوب|58.88|45.50
+سلاف بدر الفارسي|83.00|21.33
+ساره تركي الغويري|71.23|32.90
+جوري محمد بن خلوي التميمي|68.31|34.16
+تالا خالد البلادي|81.55|20.80
+أرياف عابد الحربي|77.33|24.29
+اسيل هاني علي|60.36|40.74
+ميلا بنت عبدالمجيد بن الاشقر|80.55|20.23
+زيان خالد المطيري|100|0
+مايا هاني الحربي|64.55|35.03
+نورة عامر الشمسان|52.50|47.07
+سما سليمان العسيري|70.35|29.04
+روين بنت وليد بن النمري|61.14|38.07
+جنى محمد الينبعاوي|69.66|29.26
+سيرين بنت عبدالله بن الغامدي|84.24|14.07
+دانه منصور الشهراني|67.97|29.61
+بسمة بنت محمد بن الشعفين الشهري|77.24|20.31
+جمانا جميل بن اللهاوي السلمي|63.33|34.00
+ترف عيسى الجعيد|75.42|21.28
+نايا تركي عجيب|56.25|40.12
+بتول عبدالغني تركستان|78.35|17.92
+تسنيم سليمان الشمراني|66.49|29.46
+جود مهيد الفضلي|89.17|6.67
+رتيل بنت ياسر بن الحازمي|54.74|40.98
+غدي مفرج البريكي|82.32|13.31
+سارا بنت ياسر بن الحازمي|61.80|33.79
+ميلا علي المدني|64.17|30.42
+ورد عباس مجاهد|69.48|23.84
+يارا منصور بن السناني|65.66|27.38
+فرح بنت عبدالله ابن الحسني الزهراني|63.24|29.79
+فجر بنت احمد بن الجهني|92.55|0
+ميسم علي القناص|65.50|26.36
+تالا هشام الزبالي|71.85|18.94
+زينب طارق بن السعيد|55.02|35.03
+تالا باسم الصيني|53.62|36.22
+غيداء ادريس أبو الحسين|67.22|22.56
+روسيل محمد العتيبي|59.88|29.84
+ريفال بندر الظاهرى|56.47|33.13
+تمارا بنت فهد بن عبدالله باوزير|63.64|25.86
+لمار بنت محمد الغامدي|63.41|25.22
+اماني بنت عبدالله بن آل ملحان|64.81|23.47
+جنات يوسف نبي حسين|59.92|28.06
+رفا فيصل الجيزاني|87.22|0
+لتين محمد الشدادي الحارثي|75.43|11.67
+جوانا بدر بن عيسى|69.50|17.50
+غلا نواف العتيبي|86.57|0
+جود بنت امين بن المدني|56.67|29.33
+اليان جبران بن جعران|50.85|34.40
+ميرال محمد الغامدي|39.17|44.58
+جوري رامي الغامدي|65.00|18.75
+ضي عبدالوهاب الغامدي|76.41|6.82
+ريوف شادي صالح|61.40|20.65
+أريام سمير بن احمد|72.73|9.09
+ليال فهد المروانى|76.67|5.00
+جوانا ماجد حجازي|59.81|21.81
+وسن بنت سامي بن خلف بن المعبدي|50.70|30.66
+ساره فيصل الزهراني|45.00|36.25
+مرح احمد عبدالرحمن|52.27|28.79
+جوري سلطان العنزي|66.22|14.39
+جود علي آل غفينه|56.82|23.05
+الين حميدي الثقفي|56.50|23.15
+أجوان خالد الشهراني|63.33|16.25
+سديم خليف السلمي|56.67|22.86
+دانا محمد الشهري|56.36|22.18
+رميساء فواز النهاري|51.60|26.88
+ميلا بنت ممدوح بن النمري|47.33|30.98
+آيه عبدالرحمن بن بشر|4.55|73.48
+ريما محمد الغامدي|57.41|20.48
+لميس محمد بن الاقصم|60.61|15.91
+ياسمين زياد الحميدى|0|76.33
+صبا دحيم الشهري|76.22|0
+لينا عبدالله متساه|61.36|14.74
+لين فادي بابقي|74.96|0
+دانيه محمد بن الوذيناني العتيبي|60.52|13.37
+سديم زاكي بن النعماني|63.90|9.09
+سيلا عادل عسيري|73.01|0
+ريتال وسيم جان|72.83|0
+ريم عبدالله بن الاحمدي المالكي|63.64|9.09
+ليال علي القحطاني|60.92|10.38
+جوري بنت محمد بن فراج بن ماوي المطيري|62.08|9.09
+رفاء نبيل المولد|53.47|17.60
+ملاذ عبدالرحمن العنزي|71.00|0`.split("\n").map(l=>{const[a,b,c]=l.split("|");return{n:a,h:+b,t:+c,s:(+b+ +c)/2}});
+const $=id=>document.getElementById(id),col=v=>v>=75?"var(--g)":v>=50?"var(--y)":"var(--r)";
+const avg=k=>(D.reduce((a,x)=>a+x[k],0)/D.length).toFixed(1);
+const TP=[...D].sort((a,b)=>b.s-a.s);
+$("s1").textContent=D.length;$("s2").textContent=avg("h")+"%";$("s3").textContent=avg("t")+"%";$("s4").textContent=TP[0].n;
+$("hon").innerHTML=TP.slice(0,12).map((x,i)=>`<div class="hc"${i<3?` onclick="cert(${i})" style="cursor:pointer"`:""}><span class="rk">${["🥇","🥈","🥉"][i]||"⭐"}</span><div class="av">${x.n[0]}</div><div class="nm">${x.n}</div><div class="pts">${x.s.toFixed(1)} نقطة</div></div>`).join("");
+const bar=(l,v)=>`<div class="pb"><span>${l}</span><i><em style="width:${v}%;background:${col(v)}"></em></i><strong>${v.toFixed(1)}%</strong></div>`;
+function render(){
+const q=$("q").value.trim(),lv=$("lv").value,so=$("so").value;
+let r=D.filter(x=>(!q||x.n.includes(q))&&(!lv||(lv=="g"?x.h>=75:lv=="y"?x.h>=50&&x.h<75:x.h<50)));
+r.sort((a,b)=>b[so]-a[so]);
+$("cnt").textContent="عدد النتائج: "+r.length;
+$("list").innerHTML=r.map((x,i)=>`<div class="row"><div class="n">${i+1}</div><div><div class="nm2">${x.n}</div>${bar("الواجبات",x.h)}${bar("الاختبارات",x.t)}</div></div>`).join("")||'<div class="cnt">لا توجد نتائج مطابقة</div>';}
+["q","lv","so"].forEach(i=>$(i).addEventListener("input",render));render();
+const pc=["#b8c2cc","#f7c600","#d99058"],ph=[150,190,120];
+$("pod").innerHTML=[1,0,2].map(i=>{const x=TP[i];return `<div class="pd" onclick="cert(${i})"><div class="lb">${["المركز الأول","المركز الثاني","المركز الثالث"][i]}</div><div class="av" style="background:${pc[i]}">${x.n[0]}</div><div class="pn">${x.n}</div><div class="pt">${x.s.toFixed(1)} نقطة</div><div class="pl" style="height:${ph[i]}px;background:${pc[i]}">${i+1}</div></div>`}).join("");
+const cv=$("cf"),cx=cv.getContext("2d");let ps=[],raf=0;
+function boom(){cv.width=innerWidth;cv.height=innerHeight;for(let i=0;i<160;i++)ps.push({x:innerWidth/2,y:innerHeight/3,vx:(Math.random()-.5)*16,vy:Math.random()*-14-2,c:`hsl(${Math.random()*360},85%,60%)`,s:5+Math.random()*6,r:Math.random()*6});if(!raf)anim()}
+function anim(){cx.clearRect(0,0,cv.width,cv.height);ps.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.vy+=.35;p.r+=.2;cx.fillStyle=p.c;cx.save();cx.translate(p.x,p.y);cx.rotate(p.r);cx.fillRect(-p.s/2,-p.s/2,p.s,p.s/2);cx.restore()});ps=ps.filter(p=>p.y<cv.height+20);if(ps.length)raf=requestAnimationFrame(anim);else{raf=0;cx.clearRect(0,0,cv.width,cv.height)}}
+function cert(i){const x=TP[i];$("cm").innerHTML=`<div class="cert"><div>⭐ شهادة تكريم ⭐</div><p>تُهدي المدرسة المتوسطة 121 بإدارة تعليم جدة</p><h3>${x.n}</h3><p>تقديراً لتميزها وتفاعلها في منصة مدرستي بنسبة تفاعل ${x.s.toFixed(1)}%</p><small>منسقة مدرستي: عزيزة القرني<br>مديرة المدرسة: فاطمة الغامدي</small><div class="nb"><button onclick="window.print()">🖨️ طباعة</button><button onclick="$('cm').style.display='none'">إغلاق</button></div></div>`;$("cm").style.display="flex";boom()}
+let rot=0,spinning=0;
+function spin(){if(spinning)return;spinning=1;rot+=1440+Math.random()*360;$("wh").style.transform=`rotate(${rot}deg)`;const pool=TP.slice(0,20),n=$("wn"),iv=setInterval(()=>n.textContent=pool[Math.random()*20|0].n,90);setTimeout(()=>{clearInterval(iv);n.textContent="🎉 "+pool[Math.random()*20|0].n+" 🎉";boom();spinning=0},3200)}
+setTimeout(boom,400);
+</script></body></html>
